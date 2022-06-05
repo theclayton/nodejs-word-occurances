@@ -1,14 +1,15 @@
-# nodejs-word-occurances
+module.exports = `
+WORD COUNT Help
+
+How to use:
 
 1. Link module to be able to run cli command.
-   `npm link`
+   npm link
 
 2. Run command and specify a file.
-   `word-count -p example.txt`
+   word-count -p example.txt
 
 3. Word occurance output will display in order of highest to lowest as follows:
-
-```js
 ┌─────────┬───────────┬────────────┐
 │ (index) │   word    │ ocurrences │
 ├─────────┼───────────┼────────────┤
@@ -28,4 +29,14 @@
 │   13    │  'VERY'   │     1      │
 │   14    │  'NICE'   │     1      │
 └─────────┴───────────┴────────────┘
-```
+
+word-count
+---------------------------------------------------------
+
+Optional flags:
+
+word-count [-p <path/to/dir>]
+        Explicitly defines file path to be analyzed
+        *example: word-count -p /usr/target/dir/file.txt
+        
+`;
